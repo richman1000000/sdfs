@@ -19,5 +19,5 @@ sudo chown -R root:root ./deb
 sudo fpm -s dir -t deb -n sdfs -v $VERSION -C deb/ -d fuse --url http://www.opendedup.org -d libxml2 -d libxml2-utils -m sam.silverberg@gmail.com --vendor datishsystems --description "SDFS is an inline deduplication based filesystem"
 sudo fpm -s dir -t rpm -n sdfs -v $VERSION -C deb/ -d fuse --url http://www.opendedup.org -d libxml2 -m sam.silverberg@gmail.com --vendor datishsystems --description "SDFS is an inline deduplication based filesystem"
 #cp $DEBFILE ../../datish-iso/ubuntu-14.04.3-server-amd64/pool/extra/
-sudo chown -R samsilverberg:samsilverberg ./deb
-deb-s3 upload --bucket datishdeb $DEBFILE
+#sudo chown -R samsilverberg:samsilverberg ./deb
+#deb-s3 upload --bucket datishdeb $DEBFILE
